@@ -1,130 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Amusement Park</title>
-    <style type="text/css">
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #f4f4f4;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 14px 20px;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            z-index: 10;
-            background: rgba(0,0,0,0.4);
-            backdrop-filter: blur(6px);
-        }
-
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 12pt;
-            padding: 10px 20px;
-            border-radius: 30px;
-            background: rgba(255,255,255,0.1);
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        header a:hover {
-            background: rgba(255,255,255,0.25);
-            transform: scale(1.05);
-        }
-
-        .hero {
-            background: url('kenjeranparkimg.jpg') no-repeat center center;
-            background-size: cover;
-            height: 90vh; 
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.55);
-        }
-
-        .hero div {
-            position: relative;
-            z-index: 1;
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            font-size: 42pt;
-            margin: 0 0 15px 0;
-        }
-
-        .hero p {
-            font-size: 15pt;
-            margin: 0 0 30px 0;
-        }
-
-        .tombol {
-            display: inline-block;
-            background: linear-gradient(135deg, #3498db, #2ecc71);
-            color: #fff;
-            border: none;
-            border-radius: 40px;
-            padding: 16px 32px;
-            font-size: 14pt;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.3s;
-            text-decoration: none;
-        }
-
-        .tombol:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-        }
-
-        .section {
-        padding: 40px;
-        max-width: 800px;
-        margin: 40px auto; /* no more negative margin */
-        text-align: center;
-        background: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        border-radius: 6px;
-        }
-
-
-        .section h2 {
-            margin-top: 0;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+    <title>Kenjeran Park</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a href="#map">Peta</a>
-        <a href="#tickets">Beranda</a>
-        <a href="#attractions">Atraksi</a>
+        <b>Kenjeran Park</b>
+        <a href="map.html">Peta</a>
+        <a href="attractions.html">Atraksi</a>
+        <a href="tickets.html">Tiket</a>
+        <p></p><p></p><p></p>
     </header>
 
     <div class="hero">
@@ -137,15 +23,18 @@
 
     <div class="section" id="attractions">
         <h2>Mengenai Kenjeran Park</h2>
-        <p>Kenjeran Park (Kenpark) adalah kawasan wisata keluarga di pesisir utara Surabaya yang menggabungkan wisata pantai, wahana bermain, 
+        <p>
+            Kenjeran Park (Kenpark) adalah kawasan wisata keluarga di pesisir utara Surabaya yang menggabungkan wisata pantai, wahana bermain, 
             dan spot budaya. Di sini pengunjung bisa menikmati Pantai Ria, waterpark Atlantis Land, serta ikon-ikon khas seperti Pagoda Tian Ti, 
             Patung Dewi Kwan Im, Patung Buddha Empat Wajah, dan patung naga raksasa. Selain itu, tersedia area kuliner, kios oleh-oleh, dan 
-            fasilitas rekreasi lain, menjadikannya destinasi populer untuk liburan santai maupun berfoto dengan nuansa laut dan budaya yang unik.</p>
+            fasilitas rekreasi lain, menjadikannya destinasi populer untuk liburan santai maupun berfoto dengan nuansa laut dan budaya yang unik.
+        </p>
     </div>
 
     <footer>
         <p>&copy; 2025 Kenjeran Park. All rights reserved.</p>
         <p><a href="#">Hubungi Kami</a> | <a href="#">Privacy Policy</a></p>
+        <p>Jl. Pantai Ria Kenjeran, Sukolilo Baru, Kecamatan Bulak, Surabaya</p>
     </footer>
 </body>
 </html>

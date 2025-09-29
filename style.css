@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', 'Montserrat', sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    background: rgba(255,255,255);
+    /* backdrop-filter: blur(6px); */
+
+}
+
+header a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 10px 20px;
+    border-radius: 30px;
+    justify-content: right;
+    background: rgb(51, 58, 97);
+    transition: background 0.3s, transform 0.2s;
+}
+
+header b {
+    flex: 1;
+    color :rgb(51, 58, 97);
+    text-align: left;
+    font-size: 18pt;
+
+}
+
+header a:hover {
+    background: rgba(51, 58, 97, 0.25);
+    transform: scale(1.05);
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 90vh; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero div {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 42pt;
+    margin: 0 0 15px 0;
+}
+
+.hero p {
+    font-size: 15pt;
+    margin: 0 0 30px 0;
+}
+
+.tombol {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.tombol:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.section {
+    padding: 40px;
+    margin: 40px auto; /* no more negative margin */
+    text-align: justify;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+
+.section h2 {
+    font-family: 'Montserrat';
+    margin-top: 0;
+}
+
+.section p {
+    font-family: 'Montserrat';
+}
+
+footer {
+    font-size: small;
+    font-family: 'Montserrat';
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
